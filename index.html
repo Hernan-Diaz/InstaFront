@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <title>InstaFront</title>
+</head>
+<body>
+    <header class="header">
+        <span class="logo">InstaFront</span>
+        <input class="search-bar" type="search" placeholder="Buscador...">
+        <img class="user_img" src="img/fotoPerfil.png">
+    </header>
+    <hr>
+    <main class="main-grid">
+        <article class="stories">
+            <img class="stories-img" src="img/fotoPerfil.png">
+            <img class="stories-img" src="img/fotoPerfil.png">
+            <img class="stories-img" src="img/fotoPerfil.png">
+            <img class="stories-img" src="img/fotoPerfil.png">
+
+            <!------OCULTARLAS PARA MOVIL----->
+            <img class="stories-img-large_screen" src="img/fotoPerfil.png">
+            <img class="stories-img-large_screen" src="img/fotoPerfil.png">
+            <img class="stories-img-large_screen" src="img/fotoPerfil.png">
+            
+        </article>
+        <article class="post">
+            <header class="post-header">
+                <div class="post-header-author">
+                    <img class="post-user_img" src="img/fotoPerfil.png">
+                    <span class="post-user_name">Abril González</span>
+                </div>
+                <i class="fas fa-ellipsis-h post-header-menu" ></i> <!-- usar after??? puntitos MENU -->
+                
+            </header>
+            <hr>
+            <main class="post-main">
+                <img class="post-img" src="img/fotoPerfil.png">
+
+                <!--POST'S ACTIONS-->
+
+                <div class="post-actions"> 
+                    <i class="far fa-heart like"></i>
+                    <i class="far fa-comment comentar"></i>
+                    <i class="far fa-paper-plane share"></i>
+                    <i class="far fa-smile smile"></i>
+                </div>
+                
+                <p class="post-likes">Les gusta a lulipringless y otras personas</p>
+                
+                <p class="post-comments_expand">Ver los 3,672 comentarios</p>
+                
+                <p class="comment"><span class="post-comment_author">Gabriela Mancini</span> Hola! que placer verte en frontend!!</p>
+                
+                <p class="comment"><span class="post-comment_author">Jonathan Gonzalez</span> Te estabamos esperando!! Vamooh!</p>
+                
+                
+            </main>
+            
+
+        </article>
+        <article class="sidebar">
+            <header class="sidebar-header">
+                <div class="sidebar-user">
+                    <img class="user_img" src="img/fotoPerfil.png">
+                    <span class="user-account">Abril.gonzalez23</span>
+                </div>
+                
+                <a class="change_user" href="#">Cambiar</a>
+            </header>
+            <main class="sidebar-suggest-main">
+                <p class="sidebar-suggest-title">Sugerencias para ti</p>
+                <div class="sidebar-suggest">
+                    <div class="sidebar-suggest-user">
+                        <img class="post-user_img" src="img/fotoPerfil.png">
+                        <span class="sidebar-suggest-user_name">Jonathan Gonzalez</span>
+                    </div>
+
+                    <input type="checkbox" id="example-five-checkbox" />
+                    <label id="example-five" for="example-five-checkbox">Seguir</label>
+                
+                </div>
+
+
+                <div class="sidebar-suggest">
+                    <div class="sidebar-suggest-user">
+                        <img class="post-user_img" src="img/fotoPerfil.png">
+                        <span class="sidebar-suggest-user_name">Gabriela Mancini</span>
+                    </div>
+                    <input type="checkbox" id="example-five-checkbox2" />
+                    <label id="example-five2" for="example-five-checkbox2">Seguir</label>
+                </div>
+            </main>
+
+            
+        </article>
+    </main>
+    <footer class="footer">
+        <p>Todos los derechos reservados a Hernán Díaz</p>
+    </footer>
+</body>
+</html>

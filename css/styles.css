@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    font-family: roboto, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 6vw;
+    align-items: center;
+    padding: 2.5vw;
+
+}
+
+
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 6.525vw 86.95vw 6.525vw;
+    grid-template-rows: 24.15vw 132.6vw;
+    grid-gap: 5.2vw 0px;
+    padding-top: 5.2vw;
+    padding-bottom: 22.94vw; /**************************************/
+}
+
+.user_img, .post-user_img{
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+}
+
+.stories-img{
+    width: 14.5vw;
+    height: 14.5vw;
+    border-radius: 50%;
+}
+
+.stories-img-large_screen{
+    display: none;
+}
+
+.stories{
+    
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid rgba(34, 34, 34, 0.5) 0.4px;
+    border-radius: 1.2vw;
+}
+
+
+.post{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+    border: solid rgba(34, 34, 34, 0.5) 0.4px;
+    border-radius: 1.2vw;
+}
+
+.post-header{
+    display: flex;
+    align-items: center;
+    font-size: 3.62vw;
+    padding: 2.17vw;
+    gap: 2.17vw;
+    justify-content: space-between;
+    
+}
+.post-header-author{
+    display:flex;
+    align-items: center;
+    gap: 2.17vw;
+}
+.post-header-menu{
+    font-size: 8vw;
+}
+
+.post-main{
+    padding: 4vw;
+}
+
+.post-main > *{
+    padding-bottom: 2.41vw;
+}
+
+.post-img{
+    width: 77.29vw;
+    height: 77.29vw;
+    
+}
+
+.comment, .post-comments_expand, .post-likes, .footer{
+    font-size: 2.41vw;
+}
+
+.post-comment_author{
+    font-weight: 600;
+}
+
+.post-comments_expand{
+    color: #A49B9B;
+    
+}
+
+.post-actions{
+    font-size: 5.79vw;
+}
+.post-actions > *{
+    color: black;
+    margin-right: 2.34vw;    
+}
+
+.footer{
+    background-color: black;
+    color: white;    
+    text-align: center;
+    padding: 1.93vw;
+        
+}
+
+.sidebar{
+    display: none;
+}
+
+.search-bar{
+    display: none;
+}
+
+.like, .comentar, .share, .smile{
+    transition-property: color;
+    transition-duration: 0.25s;
+}
+
+.like:hover{
+    color: red;
+
+}
+
+.comentar:hover{
+    color: greenyellow;
+
+}
+
+.share:hover{
+    color: lightblue;
+
+}
+
+.smile:hover{
+    color: orange;
+}
+
+
+/************************ LAPTOP ****************************************************************/
+
+
+@media (min-width: 768px){    
+
+    .header{
+        font-size: 2.01vw;
+        padding: 1.04vw;
+        padding-left: 8.46vw; 
+        padding-right: 2.82vw;   
+    }
+
+
+    
+    
+    .main-grid{
+        background-color: #FAFAFA;
+        grid-template-columns: 8.87vw 48.38vw 10.96vw 22.9vw 8.87vw;
+        grid-template-rows: 8.06vw 59.06vw;
+        grid-gap: 5.2vw 0px;
+        padding-top: 5.2vw;
+        padding-bottom: 8.87vw;
+    }
+    
+    .user_img, .post-user_img{
+        width: 4.03vw;
+        height: 4.03vw;
+        border-radius: 50%;
+    }
+    
+    .stories-img-large_screen{   /************MOSTRAR + STORIES*******************/
+        display: inline;
+    }
+
+    .stories-img, .stories-img-large_screen{
+        width: 4.83vw;
+        height: 4.83vw;
+        border-radius: 50%;
+    }
+    
+    .stories{        
+        border-radius: 0.4vw;
+        background-color: #fff;
+    }
+    
+    
+    .post{
+        border-radius: 0.4vw;
+        background-color: #fff;
+    }
+    
+    .post-header{
+        font-size: 1.2vw;
+        padding: 0.72vw;
+        gap: 2.17vw;        
+    }
+
+    .post-header-author, .sidebar-suggest{
+        display:flex;
+        align-items: center;
+        gap: 0.72vw;
+    }
+
+    .post-header-menu{
+        font-size: 3vw;
+    }
+    
+    .post-main{
+        padding: 1.61vw 4.516vw;
+    }
+    
+    .post-main > *{
+        padding-bottom: 0.8vw;
+    }
+    
+    .post-img{      /*img de POSTEO*/
+        width: 39.35vw;
+        height: 39.35vw;
+        
+    }
+    
+    .comment, .post-comments_expand, .post-likes, .footer{
+        font-size: 0.8vw;
+    }
+    
+    
+    .post-actions{
+        font-size: 1.93vw;
+    }
+    .post-actions > *{
+        
+        margin-right: 1.45vw;
+    }
+    
+    .footer{
+        padding: 0.64vw;
+    }
+
+    .sidebar{
+        display:inline;
+        grid-column: 4/5;
+        grid-row: 1/3;
+        font-size: 0.8vw;
+    }
+
+    .sidebar-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sidebar-user{
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-suggest{
+        justify-content: space-between;
+    }
+
+    .sidebar-suggest-user{
+        display: flex;
+        align-items: center;
+    }
+
+    .change_user, .follow{
+        color: #1CA0F6;
+        text-decoration: none;
+    }
+
+    .follow{
+        border: none;
+        background-color: white;
+        font-size: 0.8vw;
+    }
+
+    .user-account, .sidebar-suggest-user_name {
+        margin-left: 1.04vw;
+        font-weight: 500;
+    }
+    
+    .user-account::after{
+        content: "A B R I L 👻";
+        position: relative;
+        color: #808080;
+        top: 1.3vw;
+        left: -5.9vw;
+    }
+
+    .sidebar-suggest-main{
+        margin-top: 2.74vw;
+    }
+    .sidebar-suggest-main > *{
+        margin-bottom: 0.8vw;
+    }
+
+    .sidebar-suggest-title{
+        color: #808080;
+        font-weight: 700;
+    }
+
+
+
+    #example-five, #example-five2 {
+        position: relative;
+        color: #1CA0F6;
+    }
+    #example-five:hover, #example-five2:hover{
+        font-weight: 600;
+    }
+
+
+    #example-five-checkbox, #example-five-checkbox2 {
+        display: none;
+    }
+    #example-five-checkbox:checked + #example-five:after, #example-five-checkbox2:checked + #example-five2:after {
+        content: "Siguiendo";
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white;
+    }
+
+    .search-bar{
+        display: inline;
+        width: 32.25vw;
+        height: 3.22vw;
+        padding-left: 0.96vw;
+        font-size: 1.12vw;
+        color: #000;
+        background-color: #FAFAFA;
+        border: solid rgba(34, 34, 34, 0.5) 0.4px;
+        border-radius: 0.4vw;
+        position:relative;
+        left: -5vw;
+    }
+
+}
